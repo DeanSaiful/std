@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Campus In UTeM </title>
+    <link rel="stylesheet" href="Untitled-2.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="image/logoutem.png">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Campus</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="image/fkekk.png" class="fkekk">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="image/undergraduate.png">
+                    <div>
+                        <h1>Undergraduate</h1>
+                        <p>Diploma in Electronic Engineering</p>
+                        <p>Bachelor of Electronic Engineering with Honours</p>
+                        <p>Bachelor of Computer Engineering with Honours</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="image/Postgraduate_Taught.png">
+                    <div>
+                        <h1>Postgraduate (Taught Course)</h1>
+                        <p>Master of Electronic Engineering (Telecommunication System)</p>
+                        <p>Master of Electronic Engineering (Computer Engineering)</p>
+                        <p>Master of Electronic Engineering (Electronic Systems)</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="image/Postgraduate_Research.png">
+                    <div>
+                        <h1>Postgraduate (Research)</h1>
+                        <p>Master of Science in Electronic Engineering</p>
+                        <p>Doctor of Philosophy</p>
+                        <p>Doctor of Engineering (DEng)</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="image/double.png">
+                    <div>
+                        <h1>Double Course</h1>
+                        <p>Double Degree Master Programme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="image/arrow.png" id="upBtn">
+            <h3>Programme</h3>
+            <img src="image/arrow.png" id="downBtn">
+        </div>
+
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rorateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+
+</body>
+</html>
